@@ -15,7 +15,7 @@ fi
 
 # Ejecutar pruebas unitarias
 echo "📝 Ejecutando pruebas unitarias..."
-#python3 -m unittest discover -s pruebas -v
+python3 -m unittest discover -s pruebas -v
 
 # Ejecutar pylint (solo advertencias)
 echo "📋 Ejecutando análisis de código..."
@@ -29,7 +29,7 @@ fi
 
 # Verificar que la aplicación inicia correctamente
 echo "🚀 Verificando inicio de la aplicación..."
-#timeout 5s python3 app.py & || true
-timeout 5s python3 app.py || true
+timeout 5s python3 app.py & || true
+#timeout 5s python3 app.py || true
 
 echo "✅ Verificaciones completadas exitosamente!"
